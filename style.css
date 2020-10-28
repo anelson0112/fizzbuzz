@@ -1,0 +1,30 @@
+body{
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Special Elite', cursive; 
+    text-align: center;
+}
+.grid-container{
+
+    display: grid;
+    grid-template-columns: repeat(10,10%);
+    grid-template-rows: repeat(10,10%);
+    grid-gap: 4px;
+    width: 70%;
+    height: 70vh;
+    margin: 0 auto;
+    
+    
+}.number {
+  box-sizing: border-box;
+  background-color: #4682b4;
+  border-radius: 4px;
+  font-weight: 200;
+  font-size: 1.2em;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+    font-size: 100;
+} 
