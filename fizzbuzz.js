@@ -1,54 +1,44 @@
 'use strict'
+//define start button
+document.getElementById("start").onClick=buzzMath;
 
-var totalRows = 10;
-var cellsInRow = 10;
+//to put result in number box
+//var element=document.getElementsByClassName("number").innerText
 
-function drawTable(){
-    //get reference for the grid
-    var grid = document.getElementById(grid);
 
-    var tbl = document.createElement ("table");
+//the math
 
-    for (var r=0; r < totalRows; r++){
-        var row = document.createElement("tr");
+ function fizzMath(){   
+var display = document.getElementById('display');       
+var result= '';
+var displayHTML = "";
 
-        for (var c= 0; c < cellsInRow; c++) {
-
-            var cell=document.createElement ("td");
-        var cellText = document.createTextNode(buzzMath());
-                cell.appendChild(cellText);
-                row.appendChild(cell);
-        
-    
-
-function buzzMath (){
     //establish for loop to print 1-100
         for (var i= 1; i <=100; i++){
 
             switch (0){
                 case (i % 15):
-                showFizzBuzz (element);
+                result="Fizz Buzz";
                     break;
 //look if it is divisable by 15 if yes log fizzbuzz if not move next       
                 case (i % 3):
-                showFizz (element);
+                    result="Fizz";
                 break;
 //look if divisable by 3 if yes log fizz if not move next            
                 case (i % 5):
-                showBuzz (element);
+                    result="Buzz";
                     break
 //look if divisable by 5 if yes log buzz if not move next            
                 default:
-                notAFB(element);
+                    result=(i);
 //if none of the previous statements are true log i from the loop
         
+    displayHTML += "<p>" + result + "<p>";            }
+            
+        }
     
-            }}
-        }   
     
-    }
-    
-}  
+ 
     
     
     
@@ -85,6 +75,14 @@ function buzzMath (){
         fizzMath(squareValue,element);
         
         });
-
+var numClick = number[i].addEventListener('click',function(){
+                var squareValue=parseInt(element.innerText);
+                
+                fizzMath(squareValue,element);
+                
+                })
     
 } */
+ 
+
+//function for each result of loop
